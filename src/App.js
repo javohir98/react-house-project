@@ -9,7 +9,8 @@ import InfoBanner from './components/InfoBanner'
 import Quote from './components/Quote'
 import { Switch, Route } from 'react-router-dom'
 import AboutUs from './components/pages/AboutUs'
-import OurProjects from './components/pages/OurProjects'
+import Contact from './components/pages/Contact'
+import OurGallery from './components/pages/OurGallery'
 
 class App extends Component {
   render() {
@@ -28,7 +29,10 @@ class App extends Component {
             <AboutUs />
           </Route>
           <Route path='/gallery'>
-            <OurProjects/>
+            <OurGallery />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
           </Route>
         </Switch>        
         <Footer />

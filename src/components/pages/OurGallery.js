@@ -29,7 +29,7 @@ const WrapperImages = styled.section`
   grid-auto-rows: 300px;
 `;
 
-function OurProjects() {
+function OurGallery() {
   const [images, setImage] = useState([]);
 
   useEffect(() => {
@@ -67,4 +67,4 @@ function OurProjects() {
   );
 }
 
-export default OurProjects;
+export default OurGallery;

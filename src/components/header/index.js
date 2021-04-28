@@ -26,10 +26,16 @@ export class index extends Component {
         window.addEventListener('scroll',this.handleScroll)
         return (
             <div className={this.state.scrolled ? 'header header--sticky' : 'header'}>
-               <Nav /> 
+                
                 <Switch>
                     <Route exact path="/">
+                        <Nav />
                         <Banner bgImg={bannerImg} />
+                    </Route>
+                    <Route>
+                        <Nav />
+                        <div className='nav-other'>
+                        </div>
                     </Route>
                 </Switch>
             </div>
