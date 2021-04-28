@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
 import logo from '../img/home-logo.png'
+import { Link } from 'react-router-dom'
 
 export class Nav extends Component {
     render() {
         return (
             <div className='nav'>
-                <a href='/' className='header-logo'>
+                <Link to='/' className='header-logo'>
                     <img src={logo} />
-                </a>
+                </Link>
 
                 <ul className='nav-menu'>
-                    <li className='nav-item'><a className='nav-link' href='#'>Home</a></li>
-                    <li className='nav-item'><a className='nav-link' href='#'>About us</a></li>
-                    <li className='nav-item'><a className='nav-link' href='#'>Our projects</a></li>
-                    <li className='nav-item'><a className='nav-link' href='#'>Contact</a></li>
-                    <li className='nav-item work-with'><a className='nav-link' href='#'>Work with us <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                    <li className='nav-item'><Link className='nav-link' to='/'>Home</Link></li>
+                    <li className='nav-item'><Link className='nav-link' to='/about-us'>About us</Link></li>
+                    <li className='nav-item'><Link className='nav-link' to='/gallery'>Our gallery</Link></li>
+                    <li className='nav-item'><Link className='nav-link' to='/contact'>Contact</Link></li>
+                    <li className='nav-item work-with'><Link className='nav-link' to='/cooperation'>Work with us <i class="fas fa-long-arrow-alt-right"></i></Link></li>
                 </ul>
 
             </div>

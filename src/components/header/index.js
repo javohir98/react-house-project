@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Banner from './Banner'
 import Nav from './Nav'
+import { Switch, Route } from 'react-router-dom'
 import bannerImg from '../img/banner.jpg'
 
 export class index extends Component {
@@ -26,7 +27,11 @@ export class index extends Component {
         return (
             <div className={this.state.scrolled ? 'header header--sticky' : 'header'}>
                <Nav /> 
-               <Banner bgImg={bannerImg} />
+                <Switch>
+                    <Route exact path="/">
+                        <Banner bgImg={bannerImg} />
+                    </Route>
+                </Switch>
             </div>
         )
     }
