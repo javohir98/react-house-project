@@ -649,69 +649,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    form {
-        width: 336px;
-        height: 520px;
-        padding: 15px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 25px;
-        box-shadow: 0 0 34px rgba(0, 0, 0, 0.137);
-
-        .agent {
-            height: 70px!important;
-            background-color: #F5F5F5;
-            border: none!important;
-            padding: 15px;
-
-            img {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                float: left;
-            }
-            h3 {
-                font-size: 15px;
-                font-weight: 400;
-                letter-spacing: 1px;
-            }
-            span {
-                font-size: 13px;
-                font-weight: bold;
-                color: #FFAC12;
-                letter-spacing: 1px;
-                margin-left: 15px;
-            }
-        }
-
-        input,textarea,.agent {
-            width: 296px;
-            height: 60px;
-            border-radius: 10px;
-            border: 1px solid #EBEBEB;
-            text-indent: 15px;
-            &:focus {
-                outline: none;
-            }
-        }
-        textarea {
-            min-height: 100px;
-            line-height: 98px;
-        }
-        button {
-            width: 296px;
-            height: 70px;
-            font-size: 17px;
-            font-weight: bold;
-            color: #fff;
-
-            i {
-                margin-left: 15px;
-            }
-        }
-    }
     .contact-map {
         width: calc(100% - 366px);
         min-width: 500px!important;
@@ -722,5 +659,191 @@ footer {
         //     45deg
         //     , black, #271A00);
 
+    }
+}
+
+form.contact-form {
+    width: 336px;
+    height: 520px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0 0 34px rgba(0, 0, 0, 0.137);
+
+    .agent {
+        height: 70px!important;
+        background-color: #F5F5F5;
+        border: none!important;
+        padding: 15px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            float: left;
+        }
+        h3 {
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        span {
+            font-size: 13px;
+            font-weight: bold;
+            color: #FFAC12;
+            letter-spacing: 1px;
+            margin-left: 15px;
+        }
+    }
+
+    input,textarea,.agent {
+        width: 296px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #EBEBEB;
+        text-indent: 15px;
+        &:focus {
+            outline: none;
+        }
+    }
+    textarea {
+        min-height: 100px;
+        line-height: 98px;
+    }
+    button {
+        width: 296px;
+        height: 70px;
+        font-size: 17px;
+        font-weight: bold;
+        color: #fff;
+
+        i {
+            margin-left: 15px;
+        }
+    }
+}
+
+// About Us page
+
+.about__us {
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about {
+    width: calc(100% - 366px);
+
+    .about__banner {
+        width: 100%;
+        max-height: 600px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius: 57px;
+        }
+    }
+    .about__details {
+        width: 100%;
+        border-radius: 25px;
+        height: 147px;
+        margin: 50px 0;
+        box-shadow: 0 0 34px rgba(0, 0, 0, 0.14);
+        .about__details-top {
+            padding: 30px;
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .about__details-bottom {
+            height: 62px;
+            border-top: 1px solid silver;
+
+            div {
+                width: 20%;
+                height: 62px;
+                float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid silver;
+                &:last-child {
+                    border: none;
+                }
+            }
+            i{
+                font-size: 17px;
+            }
+            span {
+                font-size: 17px;
+                font-weight: bold;
+                margin-left: 15px;
+            }
+        }
+    }
+    .about__description {
+        width: 100%;
+        border-radius: 25px;
+        margin: 50px 0;
+        box-shadow: 0 0 34px rgba(0, 0, 0, 0.14);
+        .about__description-top {
+            padding: 30px;
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .about__description-bottom {
+            border-top: 1px solid silver;
+            padding: 30px;
+
+            p {
+                font-size: 15px;
+                opacity: 0.6;
+                letter-spacing: 1px;
+                &:nth-child(2) {
+                    margin: 45px 0;
+                }
+            }
+        }
+    }
+
+    .about__features {
+        width: 100%;
+        border-radius: 25px;
+        margin: 50px 0;
+        box-shadow: 0 0 34px rgba(0, 0, 0, 0.14);
+        .about__features-top {
+            padding: 30px;
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .about__features-bottom {
+            border-top: 1px solid silver;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+                font-size: 16px;
+                color: #FFAC12;
+                margin-right: 15px;
+            }
+            li {
+                font-size: 15px;
+                color: slategrey;
+                line-height: 30px;
+            }
+        }
     }
 }
