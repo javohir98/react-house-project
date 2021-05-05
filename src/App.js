@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.scss'
+import './responsive.scss'
 import ChoicePlace from './components/ChoicePlace'
 import Footer from './components/footer/Footer'
 import GoodHandsLeft from './components/GoodHandsLeft'

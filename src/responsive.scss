@@ -1,3 +1,9 @@
 $breakpoint-small: 640px;
 $breakpoint-medium: 1007px;
 $breakpoint-large: 108px;
+
+@media(max-width: 1200px) {
+    body {
+        background-color: red!important;
+    }
+}
